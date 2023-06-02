@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "Advent of Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizardassassin/Advent-of-Code.git"
+  },
+  "author": "wizardassassin",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wizardassassin/Advent-of-Code/issues"
+  },
+  "homepage": "https://github.com/wizardassassin/Advent-of-Code#readme",
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "yargs": "^17.7.2"
+  }
+}
