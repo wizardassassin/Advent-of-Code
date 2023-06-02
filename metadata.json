@@ -1,0 +1,72 @@
+[
+    {
+        "id": "2022-01",
+        "year": 2022,
+        "day": 1,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-01",
+        "solveFile": "./year-2022/day-01/solve.js",
+        "inputFile": "./year-2022/day-01/input.txt",
+        "outputFile": "./year-2022/day-01/output.json"
+    },
+    {
+        "id": "2022-02",
+        "year": 2022,
+        "day": 2,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-02",
+        "solveFile": "./year-2022/day-02/solve.js",
+        "inputFile": "./year-2022/day-02/input.txt",
+        "outputFile": "./year-2022/day-02/output.json"
+    },
+    {
+        "id": "2022-03",
+        "year": 2022,
+        "day": 3,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-03",
+        "solveFile": "./year-2022/day-03/solve.js",
+        "inputFile": "./year-2022/day-03/input.txt",
+        "outputFile": "./year-2022/day-03/output.json"
+    },
+    {
+        "id": "2022-04",
+        "year": 2022,
+        "day": 4,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-04",
+        "solveFile": "./year-2022/day-04/solve.js",
+        "inputFile": "./year-2022/day-04/input.txt",
+        "outputFile": "./year-2022/day-04/output.json"
+    },
+    {
+        "id": "2022-05",
+        "year": 2022,
+        "day": 5,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-05",
+        "solveFile": "./year-2022/day-05/solve.js",
+        "inputFile": "./year-2022/day-05/input.txt",
+        "outputFile": "./year-2022/day-05/output.json"
+    },
+    {
+        "id": "2022-06",
+        "year": 2022,
+        "day": 6,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-06",
+        "solveFile": "./year-2022/day-06/solve.js",
+        "inputFile": "./year-2022/day-06/input.txt",
+        "outputFile": "./year-2022/day-06/output.json"
+    },
+    {
+        "id": "2022-15",
+        "year": 2022,
+        "day": 15,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-15",
+        "solveFile": "./year-2022/day-15/solve.js",
+        "inputFile": "./year-2022/day-15/input.txt",
+        "outputFile": "./year-2022/day-15/output.json"
+    }
+]
