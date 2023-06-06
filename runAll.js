@@ -8,11 +8,7 @@ export default async function runAll() {
     sortMetadata(metadata);
     for (const data of metadata) {
         const res = await debugFile2(data);
-        store.push({
-            year: res.year,
-            day: res.day,
-            duration: Number(res.duration.slice(0, -2)),
-        });
+        store.push(res);
         console.log(res);
     }
     await fs.writeFile("./data.json", JSON.stringify(store, null, 4));
