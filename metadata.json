@@ -80,6 +80,16 @@
         "outputFile": "./year-2022/day-08/output.json"
     },
     {
+        "id": "2022-09",
+        "year": 2022,
+        "day": 9,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-09",
+        "solveFile": "./year-2022/day-09/solve.js",
+        "inputFile": "./year-2022/day-09/input.txt",
+        "outputFile": "./year-2022/day-09/output.json"
+    },
+    {
         "id": "2022-15",
         "year": 2022,
         "day": 15,
