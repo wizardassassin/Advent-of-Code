@@ -131,3 +131,6 @@ dist
 
 # RunAll output file
 data.json
+
+# vscode files
+.vscode/
