@@ -7,6 +7,7 @@ export default function debugFile(year, day) {
     const data = metadata.find((x) => x.year === year && x.day === day);
     assert.ok(data, "Couldn't find file metadata");
     debugFile2(data).then((res) => {
+        res.duration = res.duration.toFixed(4) + "ms";
         console.log(res);
     });
 }
@@ -21,7 +22,8 @@ export async function debugFile2(data) {
     const start = performance.now();
     const output = await program.default(input);
     const stop = performance.now();
-    const duration = (stop - start).toFixed(4) + "ms";
+    const duration = stop - start;
     await fs.writeFile(data.outputFile, JSON.stringify(output, null, 4));
+    // I think performance.now() only has microsecond accuracy
     return { year: data.year, day: data.day, output, duration };
 }
