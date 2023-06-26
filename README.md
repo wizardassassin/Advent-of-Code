@@ -44,19 +44,19 @@ Example output
 
 Running all solutions
 
-The results are aggregated into a json file. The duration is in milliseconds.
-
 ```bash
 node . run
 ```
 
-### Creating/Deleting a Day
+The results are aggregated into a json file. The duration is in milliseconds.
 
-Creates the template files for day 1, year 2023.
+### Creating/Deleting a Day
 
 ```bash
 node . create 2023 1
 ```
+
+Creates the template files for day 1, year 2023.
 
 To delete a day or year, manually remove the respective files and folders, and prune the metadata file.
 
