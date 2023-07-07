@@ -2,7 +2,7 @@ import assert from "node:assert";
 import yargs from "yargs";
 import debugFile from "./debugFile.js";
 import createFile from "./createFile.js";
-import runAll from "./runAll.js";
+import runAll, { validate } from "./runAll.js";
 import { hideBin } from "yargs/helpers";
 import { pruneMetadata, readMetadata, writeMetadata } from "./metadata.js";
 
@@ -63,6 +63,14 @@ yargs(hideBin(process.argv))
                 console.log(`Removed '${x.dayFolder}' entry`)
             );
             writeMetadata(pruned.filtered);
+        }
+    )
+    .command(
+        "validate",
+        "Validates data.json file",
+        (yargs) => yargs,
+        (argv) => {
+            validate();
         }
     )
     .strictCommands()
