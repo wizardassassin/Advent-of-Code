@@ -1,0 +1,24 @@
+name: Run Solutions
+
+on: [push]
+
+jobs:
+  run-javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Code
+        run: node . run
+      - name: Validate Code
+        run: node . validate
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: data.json
