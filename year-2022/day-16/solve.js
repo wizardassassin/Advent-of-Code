@@ -154,7 +154,7 @@ export default function solve(input) {
         1
     );
 
-    // flawed hashing
+    // very flawed hashing
     const hash_key = (h_name, e_name, h_time, e_time) =>
         nameMap.get(h_name) +
         nameMap.get(e_name) +
@@ -197,7 +197,8 @@ export default function solve(input) {
             if (compute_both) {
                 const [valveObj_h, totalRelease_h, leftover_time_h] =
                     get_release(h_node, valve, time);
-                for (let j = 0; j < remain_len; j++) {
+                const start_j = h_node === e_node ? i + 1 : 0;
+                for (let j = start_j; j < remain_len; j++) {
                     if (i === j) continue;
                     const valve2 = remain_valves[j];
                     toOpenValvesSet.delete(valve2);
