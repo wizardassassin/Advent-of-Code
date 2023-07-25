@@ -158,5 +158,15 @@
         "solveFile": "./year-2022/day-16/solve.js",
         "inputFile": "./year-2022/day-16/input.txt",
         "outputFile": "./year-2022/day-16/output.json"
+    },
+    {
+        "id": "2022-17",
+        "year": 2022,
+        "day": 17,
+        "yearFolder": "./year-2022",
+        "dayFolder": "./year-2022/day-17",
+        "solveFile": "./year-2022/day-17/solve.js",
+        "inputFile": "./year-2022/day-17/input.txt",
+        "outputFile": "./year-2022/day-17/output.json"
     }
 ]
