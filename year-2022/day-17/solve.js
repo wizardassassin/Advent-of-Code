@@ -1,5 +1,5 @@
 /**
- * --- Day 17: cool_title ---
+ * --- Day 17: Pyroclastic Flow ---
  *
  * https://adventofcode.com/2022/day/17
  *
