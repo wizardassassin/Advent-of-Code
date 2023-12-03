@@ -10,18 +10,23 @@ export default function solve(input) {
     const arr = input.split("\n").map((x) => {
         const s1 = x.split(": ");
         const id = Number(s1[0].slice(s1[0].lastIndexOf(" ")));
-        const trials = s1[1].split("; ").map((x2) => {
+        const trials = [];
+
+        s1[1].split("; ").forEach((x2) => {
             const ret = {
                 red: 0,
                 green: 0,
                 blue: 0,
             };
-            x2.split(", ").map((x3) => {
+
+            x2.split(", ").forEach((x3) => {
                 const [num, name] = x3.split(" ");
                 ret[name] = Number(num);
             });
-            return ret;
+
+            trials.push(ret);
         });
+
         return { id, trials };
     });
 
