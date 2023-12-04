@@ -21,9 +21,9 @@ export default function solve(input) {
 
     /** @type {nodeObj[]} */
     const nodeArr = input.split("\n").map((x, i) => {
-        const matches = x.match(
+        const matches = RegExp(
             /Valve (\w+) has flow rate=(\d+); tunnels? leads? to valves? (\w+(?:, \w+)*)/
-        );
+        ).exec(x);
         const name = matches[1];
         const rate = Number(matches[2]);
         const edges = matches[3].split(", ");
@@ -82,8 +82,6 @@ export default function solve(input) {
     }
 
     const toOpenValves = nodeArr.filter((x) => x.rate > 0).map((x) => x.name);
-
-    const toOpenValvesCount = toOpenValves.length;
 
     const toOpenValvesSet = new Set(toOpenValves);
 
@@ -186,7 +184,6 @@ export default function solve(input) {
             return released;
         }
         const compute_h = h_time === time;
-        const compute_e = e_time === time;
         const compute_both = h_time === e_time;
         let maxRelease = released;
         const remain_valves = [...toOpenValvesSet];
