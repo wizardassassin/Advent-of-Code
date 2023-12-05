@@ -12,7 +12,7 @@ export default function debugFile(year, day) {
     });
 }
 
-export async function debugFile2(data) {
+export async function debugFile2(data, writeOutput = true) {
     const [program, input] = await Promise.all([
         import(data.solveFile),
         fs
@@ -23,7 +23,9 @@ export async function debugFile2(data) {
     const output = await program.default(input);
     const stop = performance.now();
     const duration = stop - start;
-    await fs.writeFile(data.outputFile, JSON.stringify(output, null, 4));
+    if (writeOutput) {
+        await fs.writeFile(data.outputFile, JSON.stringify(output, null, 4));
+    }
     // I think performance.now() only has microsecond accuracy
     return { year: data.year, day: data.day, output, duration };
 }

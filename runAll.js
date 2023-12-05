@@ -8,7 +8,7 @@ export default async function runAll() {
     const metadata = readMetadata();
     sortMetadata(metadata);
     for (const data of metadata) {
-        const res = await debugFile2(data);
+        const res = await debugFile2(data, false); // non destructive run
         const res2 = structuredClone(res);
         const dayPad = String(res2.day).padStart(2, "0");
         const res3 = { id: `${res2.year}-${dayPad}`, ...res2 };
