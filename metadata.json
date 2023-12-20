@@ -220,6 +220,16 @@
         "outputFile": "./year-2023/day-04/output.json"
     },
     {
+        "id": "2023-05",
+        "year": 2023,
+        "day": 5,
+        "yearFolder": "./year-2023",
+        "dayFolder": "./year-2023/day-05",
+        "solveFile": "./year-2023/day-05/solve.js",
+        "inputFile": "./year-2023/day-05/input.txt",
+        "outputFile": "./year-2023/day-05/output.json"
+    },
+    {
         "id": "2023-06",
         "year": 2023,
         "day": 6,
