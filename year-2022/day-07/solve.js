@@ -25,6 +25,7 @@ export default function solve(input) {
                 dirMap.set(getPath(), { size: null, items: [] });
             }
         } else if (line.startsWith("$ ls")) {
+            //? $ ls command is intentionally not processed here.
         } else if (line.startsWith("dir ")) {
             const dirName = line.slice(4);
             const path = getPath();
@@ -59,13 +60,13 @@ export default function solve(input) {
         return sum;
     };
 
-    for (const [key, value] of dirMap) {
+    for (const [key] of dirMap) {
         getSize(key);
     }
 
     let sum = 0;
     const dir_size_max = 100000;
-    for (const [key, value] of dirMap) {
+    for (const [, value] of dirMap) {
         if (value.size <= dir_size_max) sum += value.size;
     }
 
@@ -79,12 +80,10 @@ export default function solve(input) {
 
     console.assert(clearSpace > 0);
 
-    let clearFolder = null;
     let clearSize = Infinity;
-    for (const [key, value] of dirMap) {
+    for (const [, value] of dirMap) {
         if (value.size >= clearSpace) {
             if (value.size < clearSize) {
-                clearFolder = value.path;
                 clearSize = value.size;
             }
         }

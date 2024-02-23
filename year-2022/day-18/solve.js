@@ -58,10 +58,6 @@ export default function solve(input) {
         surfaces[x2][y2][z2 - 1]++;
     }
 
-    const centerX = (minX + maxX) / 2;
-    const centerY = (minY + maxY) / 2;
-    const centerZ = (minZ + maxZ) / 2;
-
     let surfaceCount = 0;
 
     for (const val of surfaces.flat(2)) {

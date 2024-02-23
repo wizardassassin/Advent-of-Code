@@ -37,7 +37,6 @@ export default function solve(input) {
             measureIndex < measureLen &&
             currentCycle === measureTimes[measureIndex]
         ) {
-            // console.log(currentCycle, registerX);
             signalStrength.push(currentCycle * registerX);
             measureIndex++;
         }
@@ -89,19 +88,6 @@ export default function solve(input) {
     }
 
     const partOne = signalStrength.reduce((a, b) => a + b);
-
-    const printScreen = () => {
-        for (let i = 0; i < crt_rows; i++) {
-            let str = "";
-            for (let j = 0; j < crt_cols; j++) {
-                str += screen[i][j];
-            }
-            console.log(str);
-        }
-    };
-
-    // Uncomment to see the screen
-    // printScreen();
 
     // Magic OCR
     const partTwo = "EKRHEPUZ";
