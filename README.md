@@ -52,16 +52,14 @@ The results are aggregated into a json file. The duration is in milliseconds.
 
 ### Creating/Deleting a Day
 
+Creates the template files for day 1, year 2023.
+
 ```bash
 node . create 2023 1
 ```
 
-Creates the template files for day 1, year 2023.
-
-To delete a day or year, manually remove the respective files and folders, and prune the metadata file.
+Deletes the template files for day 1, year 2023.
 
 ```bash
-rm -r year-2023/day-01
-rm -d year-2023
-node . prune
+node . delete 2023 1
 ```
