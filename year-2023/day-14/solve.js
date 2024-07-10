@@ -1,5 +1,3 @@
-import fs from "fs";
-
 /**
  * --- Day 14: Parabolic Reflector Dish ---
  *
