@@ -308,5 +308,15 @@
         "solveFile": "./year-2023/day-13/solve.js",
         "inputFile": "./year-2023/day-13/input.txt",
         "outputFile": "./year-2023/day-13/output.json"
+    },
+    {
+        "id": "2023-14",
+        "year": 2023,
+        "day": 14,
+        "yearFolder": "./year-2023",
+        "dayFolder": "./year-2023/day-14",
+        "solveFile": "./year-2023/day-14/solve.js",
+        "inputFile": "./year-2023/day-14/input.txt",
+        "outputFile": "./year-2023/day-14/output.json"
     }
 ]
