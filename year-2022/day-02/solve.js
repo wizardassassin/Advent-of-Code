@@ -58,5 +58,5 @@ export default function solve(input) {
         .map(([a, b]) => getScore(a, convertCode(a, b)))
         .reduce((a, b) => a + b);
 
-    return { PartOne: totalScore, PartTwo: totalScore2 };
+    return { partOne: totalScore, partTwo: totalScore2 };
 }

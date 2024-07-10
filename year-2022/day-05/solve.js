@@ -51,5 +51,5 @@ export default function solve(input) {
     const PartOne = labels.map((x) => board[x][board[x].length - 1]).join("");
     const PartTwo = labels.map((x) => board2[x][board2[x].length - 1]).join("");
 
-    return { PartOne: PartOne, PartTwo: PartTwo };
+    return { partOne: PartOne, partTwo: PartTwo };
 }

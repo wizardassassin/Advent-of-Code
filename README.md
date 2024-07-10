@@ -37,7 +37,7 @@ Example output
 {
     "year": 2022,
     "day": 1,
-    "output": { "PartOne": 73211, "PartTwo": 213958 },
+    "output": { "partOne": 73211, "partTwo": 213958 },
     "duration": "0.3455ms"
 }
 ```

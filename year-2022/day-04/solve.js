@@ -31,5 +31,5 @@ export default function solve(input) {
     const PartOne = encapsulates.length;
     const PartTwo = encapsulates2.length;
 
-    return { PartOne: PartOne, PartTwo: PartTwo };
+    return { partOne: PartOne, partTwo: PartTwo };
 }

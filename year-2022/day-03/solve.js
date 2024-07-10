@@ -48,5 +48,5 @@ export default function solve(input) {
         .map(getPriority)
         .reduce((a, b) => a + b);
 
-    return { PartOne: PartOne, PartTwo: PartTwo };
+    return { partOne: PartOne, partTwo: PartTwo };
 }

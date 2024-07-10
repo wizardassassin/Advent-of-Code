@@ -99,5 +99,5 @@ export default function solve(input) {
     const PartOne = empties;
     const PartTwo = outCoord[0] * 4000000 + outCoord[1];
 
-    return { PartOne: PartOne, PartTwo: PartTwo };
+    return { partOne: PartOne, partTwo: PartTwo };
 }

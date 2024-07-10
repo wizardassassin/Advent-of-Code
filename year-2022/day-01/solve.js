@@ -15,5 +15,5 @@ export default function solve(input) {
     );
     arr.sort((a, b) => b - a);
     const top3Sum = arr.slice(0, 3).reduce((a, b) => a + b);
-    return { PartOne: Math.max(...arr), PartTwo: top3Sum };
+    return { partOne: Math.max(...arr), partTwo: top3Sum };
 }

@@ -32,5 +32,5 @@ export default function solve(input) {
     const PartOne = firstIndex;
     const PartTwo = secondIndex;
 
-    return { PartOne: PartOne, PartTwo: PartTwo };
+    return { partOne: PartOne, partTwo: PartTwo };
 }
