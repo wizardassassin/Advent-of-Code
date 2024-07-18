@@ -51,7 +51,7 @@ export default function solve(input) {
     let empties = 0;
     for (let i = bounds[0][0]; i <= bounds[0][1]; i++) {
         let j = 2000000;
-        // let j = 10;
+
         const tempCoord = [i, j];
         let noOverlap = true;
         for (const { sensor, beacon, distance } of arr) {
@@ -71,12 +71,11 @@ export default function solve(input) {
 
     const outCoord = [0, 0];
     const bound = 4000000;
-    // const bound = 20;
     let foundBeacon = false;
     for (let i = 0; i <= bound; i++) {
         for (let j = 0; j <= bound; j++) {
             let isBeacon = true;
-            for (const { sensor, beacon, distance } of arr) {
+            for (const { sensor, distance } of arr) {
                 if (getManhattanDistance([i, j], sensor) <= distance) {
                     j += sensor[1] - j + (distance - Math.abs(sensor[0] - i));
                     isBeacon = false;

@@ -25,12 +25,6 @@ export default function solve(input) {
             y_max: Math.max(a.y_max, b.y_max),
         }));
 
-    const inBounds = (coord) =>
-        coord.x >= bound.x_min &&
-        coord.x <= bound.x_max &&
-        coord.y >= bound.y_min &&
-        coord.y <= bound.y_max;
-
     const inAbyss = (coord) =>
         (coord.x < bound.x_min || coord.x > bound.x_max) &&
         coord.y > bound.y_max;
@@ -38,8 +32,6 @@ export default function solve(input) {
     const board = Array.from({ length: bound.y_max + 3 }, () =>
         Array.from({ length: bound.x_max + 3 }, () => ".")
     );
-
-    const strBoard = () => board.map((x) => x.join("")).join("\n");
 
     const offset_x = Math.floor(bound.x_min / 2); // offset the x coord to around the center of the grid
 
@@ -122,8 +114,6 @@ export default function solve(input) {
 
     markAll();
 
-    // console.log(strBoard());
-
     let count2 = 0;
     while (true) {
         count2++;
@@ -132,8 +122,6 @@ export default function solve(input) {
             break;
         }
     }
-
-    // fs.writeFileSync("test.txt", strBoard());
 
     const partTwo = count2;
 

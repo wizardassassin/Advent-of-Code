@@ -74,26 +74,6 @@ export default function solve(input) {
 
     coordScore2.add("0-0");
 
-    const print_rope = () => {
-        const offset_i = 5;
-        const offset_j = 0;
-        for (let i = 0; i < 6; i++) {
-            for (let j = 0; j < 6; j++) {
-                if (
-                    ropeArr.some(
-                        (x) => x[0] + offset_i === i && x[1] + offset_j === j
-                    )
-                ) {
-                    process.stdout.write("A");
-                } else {
-                    process.stdout.write(".");
-                }
-            }
-            process.stdout.write("\n");
-        }
-        process.stdout.write("\n");
-    };
-
     const getDirection = (coord1, coord2) => [
         Math.max(Math.min(coord2[0] - coord1[0], 1), -1),
         Math.max(Math.min(coord2[1] - coord1[1], 1), -1),
@@ -109,14 +89,12 @@ export default function solve(input) {
                         ropeArr[j],
                         ropeArr[j + 1]
                     );
-                    // console.log(move_i, move_j);
                     ropeArr[j][0] += move_i;
                     ropeArr[j][1] += move_j;
                 }
             }
             const tail = ropeArr[0];
             coordScore2.add(`${tail[0]}-${tail[1]}`);
-            // print_rope();
         }
     }
 
