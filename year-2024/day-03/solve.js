@@ -7,35 +7,5 @@
  * @returns Problem Solution
  */
 export default function solve(input) {
-    const data = input.replace(/\n/g, "");
-
-    const res = data.matchAll(/mul\((\d+),(\d+)\)/g);
-
-    const sum1 = [...res]
-        .map((x) => Number(x[1]) * Number(x[2]))
-        .reduce((a, b) => a + b, 0);
-
-    const partOne = sum1;
-
-    const res2 = data.matchAll(/mul\((\d+),(\d+)\)|do\(\)|don't\(\)/g);
-
-    let sum2 = 0;
-    let calcMul = true;
-    for (const res3 of res2) {
-        if (res3[0].startsWith("do()")) {
-            calcMul = true;
-            continue;
-        }
-        if (res3[0].startsWith("don't()")) {
-            calcMul = false;
-            continue;
-        }
-        if (calcMul) {
-            sum2 += Number(res3[1]) * Number(res3[2]);
-        }
-    }
-
-    const partTwo = sum2;
-
-    return { partOne, partTwo };
+    return { partOne: [...input.replace(/\n/g, "").matchAll(/mul\((\d+),(\d+)\)/g)].map((x) => x[1] * x[2]).reduce((a, b) => a + b, 0), partTwo: [1, ...input.replace(/\n/g, "").matchAll(/mul\((\d+),(\d+)\)|do\(\)|don't\(\)/g)].map((x, i, a) => i === 0 ? x : x[0][3] === "'" ? ((a[0] = 0), 0) : x[0][0] === "d" ? ((a[0] = 1), 0) : a[0] ? x[1] * x[2] : 0).slice(1).reduce((a, b) => a + b, 0) };
 }
