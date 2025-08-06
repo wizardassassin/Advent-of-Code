@@ -1,5 +1,45 @@
 [
     {
+        "id": "2021-01",
+        "year": 2021,
+        "day": 1,
+        "yearFolder": "./year-2021",
+        "dayFolder": "./year-2021/day-01",
+        "solveFile": "./year-2021/day-01/solve.js",
+        "inputFile": "./year-2021/day-01/input.txt",
+        "outputFile": "./year-2021/day-01/output.json"
+    },
+    {
+        "id": "2021-02",
+        "year": 2021,
+        "day": 2,
+        "yearFolder": "./year-2021",
+        "dayFolder": "./year-2021/day-02",
+        "solveFile": "./year-2021/day-02/solve.js",
+        "inputFile": "./year-2021/day-02/input.txt",
+        "outputFile": "./year-2021/day-02/output.json"
+    },
+    {
+        "id": "2021-03",
+        "year": 2021,
+        "day": 3,
+        "yearFolder": "./year-2021",
+        "dayFolder": "./year-2021/day-03",
+        "solveFile": "./year-2021/day-03/solve.js",
+        "inputFile": "./year-2021/day-03/input.txt",
+        "outputFile": "./year-2021/day-03/output.json"
+    },
+    {
+        "id": "2021-04",
+        "year": 2021,
+        "day": 4,
+        "yearFolder": "./year-2021",
+        "dayFolder": "./year-2021/day-04",
+        "solveFile": "./year-2021/day-04/solve.js",
+        "inputFile": "./year-2021/day-04/input.txt",
+        "outputFile": "./year-2021/day-04/output.json"
+    },
+    {
         "id": "2022-01",
         "year": 2022,
         "day": 1,
