@@ -2,7 +2,7 @@ import { readMetadata, writeMetadata } from "./metadata.js";
 import assert from "node:assert";
 import { stripIndent } from "common-tags";
 import fs from "fs";
-import { updateIOFiles } from "./encryptFile.js";
+import { setIOFiles } from "./encryptFile.js";
 
 const getProgramText = (year, day) =>
     stripIndent`
@@ -83,7 +83,7 @@ export default function createFile(year, day) {
     fs.writeFileSync(outputFile, outputText, {
         flag: "wx",
     });
-    const createdFiles = updateIOFiles(metadata[metadata.length - 1]);
+    const createdFiles = setIOFiles(metadata[metadata.length - 1]);
     assert.strictEqual(createdFiles, true, "Encrypted files were not created");
     writeMetadata(metadata);
 }

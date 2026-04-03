@@ -1,6 +1,8 @@
+import assert from "node:assert";
 import crypto from "crypto";
 import fs from "fs";
 import zlib from "zlib";
+import { readMetadata, writeMetadata } from "./metadata.js";
 
 const KEY_BYTES = 32;
 const IV_BYES = 12;
@@ -112,10 +114,10 @@ export function generateIOHash(inputText, outputText) {
 
 /**
  *
- * @param {AOCData} data
+ * @param {import("./metadata.js").AOCData} data
  * @returns
  */
-export function updateIOFiles(data) {
+export function setIOFiles(data) {
     if (!hasSecretKey()) {
         console.log("No secret key was found... skipping");
         return false;
@@ -127,8 +129,54 @@ export function updateIOFiles(data) {
         fs.writeFileSync(data.encryptedInputFile, encodeData(inputText));
         fs.writeFileSync(data.encryptedOutputFile, encodeData(outputText));
         data.combinedHash = hash;
-        console.log("Updated input files");
         return true;
     }
     return false;
+}
+
+/**
+ *
+ * @param {import("./metadata.js").AOCData} data
+ * @returns
+ */
+export function getIOFiles(data) {
+    if (!hasSecretKey()) {
+        console.log("No secret key was found... skipping");
+        return false;
+    }
+    const encryptedInputText = fs.readFileSync(
+        data.encryptedInputFile,
+        "utf-8",
+    );
+    const encryptedOutputText = fs.readFileSync(
+        data.encryptedOutputFile,
+        "utf-8",
+    );
+    const inputText = decodeData(encryptedInputText);
+    const outputText = decodeData(encryptedOutputText);
+    const hash = generateIOHash(inputText, outputText);
+    assert.strictEqual(hash, data.combinedHash, "Invalid file hash");
+    fs.writeFileSync(data.inputFile, inputText);
+    fs.writeFileSync(data.outputFile, outputText);
+    return true;
+}
+
+export function encryptCLI(year, day) {
+    const metadata = readMetadata();
+    const data = metadata.find((x) => x.year === year && x.day === day);
+    assert.ok(data, "Couldn't find file metadata");
+    const didUpdate = setIOFiles(data);
+    if (didUpdate) {
+        console.log("Updated input files");
+        writeMetadata(metadata);
+    } else console.log("No files were updated");
+}
+
+export function decryptCLI(year, day) {
+    const metadata = readMetadata();
+    const data = metadata.find((x) => x.year === year && x.day === day);
+    assert.ok(data, "Couldn't find file metadata");
+    const didUpdate = getIOFiles(data);
+    if (didUpdate) console.log("Updated input files");
+    else console.log("No files were updated");
 }

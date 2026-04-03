@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { readMetadata, writeMetadata } from "./metadata.js";
 import fs from "fs/promises";
-import { updateIOFiles } from "./encryptFile.js";
+import { setIOFiles } from "./encryptFile.js";
 
 export default function debugFile(year, day) {
     const metadata = readMetadata();
@@ -10,8 +10,11 @@ export default function debugFile(year, day) {
     debugFile2(data).then((res) => {
         res.duration = res.duration.toFixed(4) + "ms";
         console.log(res);
-        const didUpdate = updateIOFiles(data);
-        if (didUpdate) writeMetadata(metadata);
+        const didUpdate = setIOFiles(data);
+        if (didUpdate) {
+            console.log("Updated input files");
+            writeMetadata(metadata);
+        }
     });
 }
 

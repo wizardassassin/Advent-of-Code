@@ -6,6 +6,7 @@ import runAll, { validate } from "./runAll.js";
 import { hideBin } from "yargs/helpers";
 import { pruneMetadata, readMetadata, writeMetadata } from "./metadata.js";
 import deleteFile from "./deleteFile.js";
+import { decryptCLI, encryptCLI } from "./encryptFile.js";
 
 function validateDate(year, day) {
     assert.strictEqual(Number.isFinite(year), true, "Invalid year number");
@@ -27,7 +28,7 @@ yargs(hideBin(process.argv))
         (argv) => {
             validateDate(argv.year, argv.day);
             debugFile(argv.year, argv.day);
-        }
+        },
     )
     .command(
         "create <year> <day>",
@@ -43,7 +44,7 @@ yargs(hideBin(process.argv))
         (argv) => {
             validateDate(argv.year, argv.day);
             createFile(argv.year, argv.day);
-        }
+        },
     )
     .command(
         "delete <year> <day>",
@@ -59,7 +60,7 @@ yargs(hideBin(process.argv))
         (argv) => {
             validateDate(argv.year, argv.day);
             deleteFile(argv.year, argv.day);
-        }
+        },
     )
     .command(
         "run",
@@ -67,7 +68,7 @@ yargs(hideBin(process.argv))
         (yargs) => yargs,
         (argv) => {
             runAll();
-        }
+        },
     )
     .command(
         "prune",
@@ -77,10 +78,10 @@ yargs(hideBin(process.argv))
             const metadata = readMetadata();
             const pruned = pruneMetadata(metadata);
             pruned.removed.forEach((x) =>
-                console.log(`Removed '${x.dayFolder}' entry`)
+                console.log(`Removed '${x.dayFolder}' entry`),
             );
             writeMetadata(pruned.filtered);
-        }
+        },
     )
     .command(
         "validate",
@@ -88,7 +89,39 @@ yargs(hideBin(process.argv))
         (yargs) => yargs,
         (argv) => {
             validate();
-        }
+        },
+    )
+    .command(
+        "encrypt <year> <day>",
+        "Encrypt Input Files",
+        (yargs) =>
+            yargs
+                .positional("year", {
+                    type: "number",
+                })
+                .positional("day", {
+                    type: "number",
+                }),
+        (argv) => {
+            validateDate(argv.year, argv.day);
+            encryptCLI(argv.year, argv.day);
+        },
+    )
+    .command(
+        "decrypt <year> <day>",
+        "Decrypt Input Files",
+        (yargs) =>
+            yargs
+                .positional("year", {
+                    type: "number",
+                })
+                .positional("day", {
+                    type: "number",
+                }),
+        (argv) => {
+            validateDate(argv.year, argv.day);
+            decryptCLI(argv.year, argv.day);
+        },
     )
     .strictCommands()
     .demandCommand()
