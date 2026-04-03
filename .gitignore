@@ -134,3 +134,7 @@ data.json
 
 # vscode files
 .vscode/
+
+# aoc input and output files
+input.txt
+output.json
