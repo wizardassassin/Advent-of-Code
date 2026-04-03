@@ -810,5 +810,19 @@
         "encryptedInputFile": "./input-files/2025-03.input.bin",
         "encryptedOutputFile": "./input-files/2025-03.output.bin",
         "combinedHash": "c59fb7b18c477084ddcb93a55910da28efbb39847b295043bc144b6819daa69d"
+    },
+    {
+        "id": "2025-04",
+        "year": 2025,
+        "day": 4,
+        "yearFolder": "./year-2025",
+        "dayFolder": "./year-2025/day-04",
+        "solveFile": "./year-2025/day-04/solve.js",
+        "inputFile": "./year-2025/day-04/input.txt",
+        "outputFile": "./year-2025/day-04/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2025-04.input.bin",
+        "encryptedOutputFile": "./input-files/2025-04.output.bin",
+        "combinedHash": "1c813d35904c46774969ba8d78faf878954ce214fd046b8fac69a2817ec9925a"
     }
 ]
