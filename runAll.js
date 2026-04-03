@@ -2,11 +2,13 @@ import { readMetadata, sortMetadata } from "./metadata.js";
 import { debugFile2 } from "./debugFile.js";
 import fs from "fs/promises";
 import assert from "assert/strict";
+import { hasSecretKey, getIOFiles } from "./encryptFile.js";
 
 export default async function runAll() {
     const store = [];
     const metadata = readMetadata();
     sortMetadata(metadata);
+    await decryptAll(metadata);
     for (const data of metadata) {
         const res = await debugFile2(data, false, true); // non destructive run
         const res2 = structuredClone(res);
@@ -45,4 +47,28 @@ export async function validate() {
             throw error;
         console.error("data.json file not found");
     }
+}
+
+async function decryptAll(metadata) {
+    if (!hasSecretKey()) return;
+    const res = metadata.map(async (data) => {
+        const inputExists = (
+            await Promise.all([
+                fileExists(data.inputFile),
+                fileExists(data.outputFile),
+            ])
+        ).every((x) => x);
+        if (!inputExists) getIOFiles(data);
+    });
+    await Promise.all(res);
+}
+
+async function fileExists(file) {
+    return await fs
+        .lstat(file)
+        .then((x) => x.isFile())
+        .catch((err) => {
+            if (err.code !== "ENOENT") throw err;
+            return false;
+        });
 }
