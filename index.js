@@ -65,9 +65,13 @@ yargs(hideBin(process.argv))
     .command(
         "run",
         "Runs all Files",
-        (yargs) => yargs,
+        (yargs) =>
+            yargs.option("remove-output", {
+                description: "Remove answer output",
+                type: "boolean",
+            }),
         (argv) => {
-            runAll();
+            runAll(argv.removeOutput ?? false);
         },
     )
     .command(
@@ -86,9 +90,13 @@ yargs(hideBin(process.argv))
     .command(
         "validate",
         "Validates data.json file",
-        (yargs) => yargs,
+        (yargs) =>
+            yargs.option("remove-output", {
+                description: "Remove answer output",
+                type: "boolean",
+            }),
         (argv) => {
-            validate();
+            validate(argv.removeOutput ?? false);
         },
     )
     .command(

@@ -57,7 +57,7 @@ export function decrypt(buffer) {
  * @param {Buffer} buffer
  * @returns
  */
-function toFormattedHex(buffer) {
+export function toFormattedHex(buffer) {
     const hex = buffer.toString("hex");
     const LINE_LENGTH = Math.floor(Math.sqrt(hex.length));
     let output = "";
@@ -71,7 +71,7 @@ function toFormattedHex(buffer) {
  * @param {Buffer} buffer
  * @returns
  */
-function fromFormattedHex(buffer) {
+export function fromFormattedHex(buffer) {
     const hex = buffer.toString("utf-8").replace(/\s*\r?\n\s*/g, "");
     return Buffer.from(hex, "hex");
 }
