@@ -1,16 +1,32 @@
 import assert from "node:assert";
 import fs from "fs";
 
+/**
+ * @typedef {Object} AOCData
+ * @property {string} id
+ * @property {number} year
+ * @property {number} day
+ * @property {string} yearFolder
+ * @property {string} dayFolder
+ * @property {string} solveFile
+ * @property {string} inputFile
+ * @property {string} outputFile
+ * @property {string} encryptedFolder
+ * @property {string} encryptedInputFile
+ * @property {string} encryptedOutputFile
+ * @property {string} combinedHash
+ */
+
 const metadataFile = "./metadata.json";
 
 export function readMetadata() {
     try {
-        /** @type {Array<any>} */
+        /** @type {Array<AOCData>} */
         const data = JSON.parse(fs.readFileSync(metadataFile, "utf-8"));
         assert.strictEqual(
             Array.isArray(data),
             true,
-            "Metadata is not an array"
+            "Metadata is not an array",
         );
         return data;
     } catch (error) {
@@ -20,7 +36,7 @@ export function readMetadata() {
 }
 /**
  *
- * @param {Array<any>} metadata
+ * @param {Array<AOCData>} metadata
  */
 export function sortMetadata(metadata) {
     metadata.sort((a, b) => a.year - b.year || a.day - b.day);
@@ -28,7 +44,7 @@ export function sortMetadata(metadata) {
 
 /**
  *
- * @param {Array<any>} metadata
+ * @param {Array<AOCData>} metadata
  */
 export function writeMetadata(metadata) {
     sortMetadata(metadata);
@@ -37,7 +53,7 @@ export function writeMetadata(metadata) {
 
 /**
  *
- * @param {Array<any>} metadata
+ * @param {Array<AOCData>} metadata
  */
 export function pruneMetadata(metadata) {
     return {

@@ -2,6 +2,7 @@ import { readMetadata, writeMetadata } from "./metadata.js";
 import assert from "node:assert";
 import { stripIndent } from "common-tags";
 import fs from "fs";
+import { updateIOFiles } from "./encryptFile.js";
 
 const getProgramText = (year, day) =>
     stripIndent`
@@ -23,20 +24,21 @@ const getProgramText = (year, day) =>
         }
     ` + "\n";
 
-function createFolders(yearFolder, dayFolder) {
-    try {
-        fs.mkdirSync(yearFolder);
-        console.log(`Created '${yearFolder}' folder`);
-    } catch (error) {
-        if (error.code !== "EEXIST") throw error;
-    }
-    try {
-        fs.mkdirSync(dayFolder);
-        console.log(`Created '${dayFolder}' folder`);
-    } catch (error) {
-        if (error.code !== "EEXIST") throw error;
+const inputText = "";
+const outputText = JSON.stringify({ partOne: null, partTwo: null }, null, 4);
+
+function createFolders(...folders) {
+    for (const folder of folders) {
+        try {
+            fs.mkdirSync(folder);
+            console.log(`Created '${folder}' folder`);
+        } catch (error) {
+            if (error.code !== "EEXIST") throw error;
+        }
     }
 }
+
+const combinedHash = "NOT_A_HASH";
 
 export default function createFile(year, day) {
     const dayPad = String(day).padStart(2, "0");
@@ -46,12 +48,15 @@ export default function createFile(year, day) {
     const inputFile = `${dayFolder}/input.txt`;
     const outputFile = `${dayFolder}/output.json`;
     const id = `${year}-${dayPad}`;
+    const encryptedFolder = `./input-files`;
+    const encryptedInputFile = `${encryptedFolder}/${id}.input.bin`;
+    const encryptedOutputFile = `${encryptedFolder}/${id}.output.bin`;
 
     const metadata = readMetadata();
     assert.strictEqual(
         metadata.some((x) => x.id === id),
         false,
-        "Duplicate id entry was found"
+        "Duplicate id entry was found",
     );
     metadata.push({
         id,
@@ -62,21 +67,23 @@ export default function createFile(year, day) {
         solveFile,
         inputFile,
         outputFile,
+        encryptedFolder,
+        encryptedInputFile,
+        encryptedOutputFile,
+        combinedHash,
     });
 
-    createFolders(yearFolder, dayFolder);
+    createFolders(yearFolder, dayFolder, encryptedFolder);
     fs.writeFileSync(solveFile, getProgramText(year, day), {
         flag: "wx",
     });
-    fs.writeFileSync(inputFile, "", {
+    fs.writeFileSync(inputFile, inputText, {
         flag: "wx",
     });
-    fs.writeFileSync(
-        outputFile,
-        JSON.stringify({ partOne: null, partTwo: null }, null, 4),
-        {
-            flag: "wx",
-        }
-    );
+    fs.writeFileSync(outputFile, outputText, {
+        flag: "wx",
+    });
+    const createdFiles = updateIOFiles(metadata[metadata.length - 1]);
+    assert.strictEqual(createdFiles, true, "Encrypted files were not created");
     writeMetadata(metadata);
 }
