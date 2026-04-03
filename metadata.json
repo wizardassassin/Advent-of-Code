@@ -7,7 +7,11 @@
         "dayFolder": "./year-2021/day-01",
         "solveFile": "./year-2021/day-01/solve.js",
         "inputFile": "./year-2021/day-01/input.txt",
-        "outputFile": "./year-2021/day-01/output.json"
+        "outputFile": "./year-2021/day-01/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-01.input.bin",
+        "encryptedOutputFile": "./input-files/2021-01.output.bin",
+        "combinedHash": "347b3b31c40b7f3246e6fa682a7c77289a1d6de47a197c67c5f508905fad08a2"
     },
     {
         "id": "2021-02",
@@ -17,7 +21,11 @@
         "dayFolder": "./year-2021/day-02",
         "solveFile": "./year-2021/day-02/solve.js",
         "inputFile": "./year-2021/day-02/input.txt",
-        "outputFile": "./year-2021/day-02/output.json"
+        "outputFile": "./year-2021/day-02/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-02.input.bin",
+        "encryptedOutputFile": "./input-files/2021-02.output.bin",
+        "combinedHash": "288f8d4dc0d60e23170160b931cd28c302d59157737a74b2c64bf19bb2769d23"
     },
     {
         "id": "2021-03",
@@ -27,7 +35,11 @@
         "dayFolder": "./year-2021/day-03",
         "solveFile": "./year-2021/day-03/solve.js",
         "inputFile": "./year-2021/day-03/input.txt",
-        "outputFile": "./year-2021/day-03/output.json"
+        "outputFile": "./year-2021/day-03/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-03.input.bin",
+        "encryptedOutputFile": "./input-files/2021-03.output.bin",
+        "combinedHash": "191263b9306be1b30688906482e2b1f341950739ef7d4e5711dc50fb4f98f3d8"
     },
     {
         "id": "2021-04",
@@ -37,7 +49,11 @@
         "dayFolder": "./year-2021/day-04",
         "solveFile": "./year-2021/day-04/solve.js",
         "inputFile": "./year-2021/day-04/input.txt",
-        "outputFile": "./year-2021/day-04/output.json"
+        "outputFile": "./year-2021/day-04/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-04.input.bin",
+        "encryptedOutputFile": "./input-files/2021-04.output.bin",
+        "combinedHash": "6201d05509813860c8c8bfb58973a6ff68961b0d1d66e9eddd9fa69088eeac5f"
     },
     {
         "id": "2021-05",
@@ -47,7 +63,11 @@
         "dayFolder": "./year-2021/day-05",
         "solveFile": "./year-2021/day-05/solve.js",
         "inputFile": "./year-2021/day-05/input.txt",
-        "outputFile": "./year-2021/day-05/output.json"
+        "outputFile": "./year-2021/day-05/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-05.input.bin",
+        "encryptedOutputFile": "./input-files/2021-05.output.bin",
+        "combinedHash": "4ab31198b21d5c2bf7b2f9a14496ba61bd0d3c5f2590bb20db1b64b6b2784426"
     },
     {
         "id": "2021-06",
@@ -57,7 +77,11 @@
         "dayFolder": "./year-2021/day-06",
         "solveFile": "./year-2021/day-06/solve.js",
         "inputFile": "./year-2021/day-06/input.txt",
-        "outputFile": "./year-2021/day-06/output.json"
+        "outputFile": "./year-2021/day-06/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-06.input.bin",
+        "encryptedOutputFile": "./input-files/2021-06.output.bin",
+        "combinedHash": "6c63c9df2e03cfe3d1f5f8e2fc4af994458cf8c723818dbe5ffb960359973eff"
     },
     {
         "id": "2021-07",
@@ -67,7 +91,11 @@
         "dayFolder": "./year-2021/day-07",
         "solveFile": "./year-2021/day-07/solve.js",
         "inputFile": "./year-2021/day-07/input.txt",
-        "outputFile": "./year-2021/day-07/output.json"
+        "outputFile": "./year-2021/day-07/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-07.input.bin",
+        "encryptedOutputFile": "./input-files/2021-07.output.bin",
+        "combinedHash": "8d52ad222a592a768e8ba7faef73da56ab84e3b8f8f496ec1b0c82f3cb473174"
     },
     {
         "id": "2021-08",
@@ -77,7 +105,11 @@
         "dayFolder": "./year-2021/day-08",
         "solveFile": "./year-2021/day-08/solve.js",
         "inputFile": "./year-2021/day-08/input.txt",
-        "outputFile": "./year-2021/day-08/output.json"
+        "outputFile": "./year-2021/day-08/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2021-08.input.bin",
+        "encryptedOutputFile": "./input-files/2021-08.output.bin",
+        "combinedHash": "8ee47dbdde56577eb88d492935630346f1c0c87fe6bd64fb91f5ef5a70a27642"
     },
     {
         "id": "2022-01",
@@ -87,7 +119,11 @@
         "dayFolder": "./year-2022/day-01",
         "solveFile": "./year-2022/day-01/solve.js",
         "inputFile": "./year-2022/day-01/input.txt",
-        "outputFile": "./year-2022/day-01/output.json"
+        "outputFile": "./year-2022/day-01/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-01.input.bin",
+        "encryptedOutputFile": "./input-files/2022-01.output.bin",
+        "combinedHash": "4b2ac1c6749a659ab99614356faf9c1a5b57cb8fcbc847aed9a65d9c69fd49c7"
     },
     {
         "id": "2022-02",
@@ -97,7 +133,11 @@
         "dayFolder": "./year-2022/day-02",
         "solveFile": "./year-2022/day-02/solve.js",
         "inputFile": "./year-2022/day-02/input.txt",
-        "outputFile": "./year-2022/day-02/output.json"
+        "outputFile": "./year-2022/day-02/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-02.input.bin",
+        "encryptedOutputFile": "./input-files/2022-02.output.bin",
+        "combinedHash": "9eb664fed8f9188e35da5d85e91f2edd4856971ca9828aaf757460db80e11abf"
     },
     {
         "id": "2022-03",
@@ -107,7 +147,11 @@
         "dayFolder": "./year-2022/day-03",
         "solveFile": "./year-2022/day-03/solve.js",
         "inputFile": "./year-2022/day-03/input.txt",
-        "outputFile": "./year-2022/day-03/output.json"
+        "outputFile": "./year-2022/day-03/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-03.input.bin",
+        "encryptedOutputFile": "./input-files/2022-03.output.bin",
+        "combinedHash": "e28c2732c181031d2e486fffc95bcd588f87f5f9277fa608f7fee0ae378ccdaf"
     },
     {
         "id": "2022-04",
@@ -117,7 +161,11 @@
         "dayFolder": "./year-2022/day-04",
         "solveFile": "./year-2022/day-04/solve.js",
         "inputFile": "./year-2022/day-04/input.txt",
-        "outputFile": "./year-2022/day-04/output.json"
+        "outputFile": "./year-2022/day-04/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-04.input.bin",
+        "encryptedOutputFile": "./input-files/2022-04.output.bin",
+        "combinedHash": "1df3c0765cde08e8a2775b9f251efc09ce46d9d7662043ab3533e9d089009396"
     },
     {
         "id": "2022-05",
@@ -127,7 +175,11 @@
         "dayFolder": "./year-2022/day-05",
         "solveFile": "./year-2022/day-05/solve.js",
         "inputFile": "./year-2022/day-05/input.txt",
-        "outputFile": "./year-2022/day-05/output.json"
+        "outputFile": "./year-2022/day-05/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-05.input.bin",
+        "encryptedOutputFile": "./input-files/2022-05.output.bin",
+        "combinedHash": "8ea22bae9a0effcd2ea31736ee31ba7bc83f0ad4cf177653dd5682ca7e4d4120"
     },
     {
         "id": "2022-06",
@@ -137,7 +189,11 @@
         "dayFolder": "./year-2022/day-06",
         "solveFile": "./year-2022/day-06/solve.js",
         "inputFile": "./year-2022/day-06/input.txt",
-        "outputFile": "./year-2022/day-06/output.json"
+        "outputFile": "./year-2022/day-06/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-06.input.bin",
+        "encryptedOutputFile": "./input-files/2022-06.output.bin",
+        "combinedHash": "6018c75390b3ed69322fd6ff3340db16e19eb32d3dbad2c040d4ddfa0e8a046b"
     },
     {
         "id": "2022-07",
@@ -147,7 +203,11 @@
         "dayFolder": "./year-2022/day-07",
         "solveFile": "./year-2022/day-07/solve.js",
         "inputFile": "./year-2022/day-07/input.txt",
-        "outputFile": "./year-2022/day-07/output.json"
+        "outputFile": "./year-2022/day-07/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-07.input.bin",
+        "encryptedOutputFile": "./input-files/2022-07.output.bin",
+        "combinedHash": "6cc3cbf4e2136113295137390275aec6192312523ee86d11d7d219a91cdd64df"
     },
     {
         "id": "2022-08",
@@ -157,7 +217,11 @@
         "dayFolder": "./year-2022/day-08",
         "solveFile": "./year-2022/day-08/solve.js",
         "inputFile": "./year-2022/day-08/input.txt",
-        "outputFile": "./year-2022/day-08/output.json"
+        "outputFile": "./year-2022/day-08/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-08.input.bin",
+        "encryptedOutputFile": "./input-files/2022-08.output.bin",
+        "combinedHash": "74491d4f136d3b8357da6cdd9298c3b5f322e274c329cfba60bfae1b2c781632"
     },
     {
         "id": "2022-09",
@@ -167,7 +231,11 @@
         "dayFolder": "./year-2022/day-09",
         "solveFile": "./year-2022/day-09/solve.js",
         "inputFile": "./year-2022/day-09/input.txt",
-        "outputFile": "./year-2022/day-09/output.json"
+        "outputFile": "./year-2022/day-09/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-09.input.bin",
+        "encryptedOutputFile": "./input-files/2022-09.output.bin",
+        "combinedHash": "a57d357c5415708d25ddcc086737248a7678584ae74ba31987c976fa2f287e68"
     },
     {
         "id": "2022-10",
@@ -177,7 +245,11 @@
         "dayFolder": "./year-2022/day-10",
         "solveFile": "./year-2022/day-10/solve.js",
         "inputFile": "./year-2022/day-10/input.txt",
-        "outputFile": "./year-2022/day-10/output.json"
+        "outputFile": "./year-2022/day-10/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-10.input.bin",
+        "encryptedOutputFile": "./input-files/2022-10.output.bin",
+        "combinedHash": "1fa04d40da803f16108f376d225a70f3d265687fabe726fa7ccbb7bd5c9faa6e"
     },
     {
         "id": "2022-11",
@@ -187,7 +259,11 @@
         "dayFolder": "./year-2022/day-11",
         "solveFile": "./year-2022/day-11/solve.js",
         "inputFile": "./year-2022/day-11/input.txt",
-        "outputFile": "./year-2022/day-11/output.json"
+        "outputFile": "./year-2022/day-11/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-11.input.bin",
+        "encryptedOutputFile": "./input-files/2022-11.output.bin",
+        "combinedHash": "53a1dcecbf8bf9fb17e1a2cdd74704175cbc3645e88fae687980d48557a4937f"
     },
     {
         "id": "2022-12",
@@ -197,7 +273,11 @@
         "dayFolder": "./year-2022/day-12",
         "solveFile": "./year-2022/day-12/solve.js",
         "inputFile": "./year-2022/day-12/input.txt",
-        "outputFile": "./year-2022/day-12/output.json"
+        "outputFile": "./year-2022/day-12/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-12.input.bin",
+        "encryptedOutputFile": "./input-files/2022-12.output.bin",
+        "combinedHash": "47a23cd06e60c62518c74273f408ce396999625cc4073633b3815b157690cc77"
     },
     {
         "id": "2022-13",
@@ -207,7 +287,11 @@
         "dayFolder": "./year-2022/day-13",
         "solveFile": "./year-2022/day-13/solve.js",
         "inputFile": "./year-2022/day-13/input.txt",
-        "outputFile": "./year-2022/day-13/output.json"
+        "outputFile": "./year-2022/day-13/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-13.input.bin",
+        "encryptedOutputFile": "./input-files/2022-13.output.bin",
+        "combinedHash": "4eb9a9ccd7e7eae78b385f1a3a020a4da93c19ac3153113fc74be8589c6fa2da"
     },
     {
         "id": "2022-14",
@@ -217,7 +301,11 @@
         "dayFolder": "./year-2022/day-14",
         "solveFile": "./year-2022/day-14/solve.js",
         "inputFile": "./year-2022/day-14/input.txt",
-        "outputFile": "./year-2022/day-14/output.json"
+        "outputFile": "./year-2022/day-14/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-14.input.bin",
+        "encryptedOutputFile": "./input-files/2022-14.output.bin",
+        "combinedHash": "b8edc003ab35f025254f200ab4b189cfc0eb7a77cf982e6a66101e2c127faf4a"
     },
     {
         "id": "2022-15",
@@ -227,7 +315,11 @@
         "dayFolder": "./year-2022/day-15",
         "solveFile": "./year-2022/day-15/solve.js",
         "inputFile": "./year-2022/day-15/input.txt",
-        "outputFile": "./year-2022/day-15/output.json"
+        "outputFile": "./year-2022/day-15/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-15.input.bin",
+        "encryptedOutputFile": "./input-files/2022-15.output.bin",
+        "combinedHash": "82f23883bd6c889b619162a68a9fa910e3d93af4f812f401635ab45e6f94f0b2"
     },
     {
         "id": "2022-16",
@@ -237,7 +329,11 @@
         "dayFolder": "./year-2022/day-16",
         "solveFile": "./year-2022/day-16/solve.js",
         "inputFile": "./year-2022/day-16/input.txt",
-        "outputFile": "./year-2022/day-16/output.json"
+        "outputFile": "./year-2022/day-16/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-16.input.bin",
+        "encryptedOutputFile": "./input-files/2022-16.output.bin",
+        "combinedHash": "519563e5744d2683f5cab0716e770dbd49d01bacb496b148a18588cf6aebaa3b"
     },
     {
         "id": "2022-17",
@@ -247,7 +343,11 @@
         "dayFolder": "./year-2022/day-17",
         "solveFile": "./year-2022/day-17/solve.js",
         "inputFile": "./year-2022/day-17/input.txt",
-        "outputFile": "./year-2022/day-17/output.json"
+        "outputFile": "./year-2022/day-17/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-17.input.bin",
+        "encryptedOutputFile": "./input-files/2022-17.output.bin",
+        "combinedHash": "5c2356242d5e3b73f40bca11cb9a26c1a324bc1e200663501592202c4b78be8f"
     },
     {
         "id": "2022-18",
@@ -257,7 +357,11 @@
         "dayFolder": "./year-2022/day-18",
         "solveFile": "./year-2022/day-18/solve.js",
         "inputFile": "./year-2022/day-18/input.txt",
-        "outputFile": "./year-2022/day-18/output.json"
+        "outputFile": "./year-2022/day-18/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2022-18.input.bin",
+        "encryptedOutputFile": "./input-files/2022-18.output.bin",
+        "combinedHash": "e659e2f6021ec6200932f21ef8aa120373188b877bf52d64a165687c8c661db4"
     },
     {
         "id": "2023-01",
@@ -267,7 +371,11 @@
         "dayFolder": "./year-2023/day-01",
         "solveFile": "./year-2023/day-01/solve.js",
         "inputFile": "./year-2023/day-01/input.txt",
-        "outputFile": "./year-2023/day-01/output.json"
+        "outputFile": "./year-2023/day-01/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-01.input.bin",
+        "encryptedOutputFile": "./input-files/2023-01.output.bin",
+        "combinedHash": "4d452553994d6ed2c063ec7de8b41dcc32ea2180952b5ce4236787cc009e4e96"
     },
     {
         "id": "2023-02",
@@ -277,7 +385,11 @@
         "dayFolder": "./year-2023/day-02",
         "solveFile": "./year-2023/day-02/solve.js",
         "inputFile": "./year-2023/day-02/input.txt",
-        "outputFile": "./year-2023/day-02/output.json"
+        "outputFile": "./year-2023/day-02/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-02.input.bin",
+        "encryptedOutputFile": "./input-files/2023-02.output.bin",
+        "combinedHash": "c377acdb40b03d4c9731eaf3a711b87ddd00fcf8220ce6287172f52f54caeb42"
     },
     {
         "id": "2023-03",
@@ -287,7 +399,11 @@
         "dayFolder": "./year-2023/day-03",
         "solveFile": "./year-2023/day-03/solve.js",
         "inputFile": "./year-2023/day-03/input.txt",
-        "outputFile": "./year-2023/day-03/output.json"
+        "outputFile": "./year-2023/day-03/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-03.input.bin",
+        "encryptedOutputFile": "./input-files/2023-03.output.bin",
+        "combinedHash": "57d4d7db9cb497d6a79e3a2db51c86d55a948762f5c533edf12347303663b052"
     },
     {
         "id": "2023-04",
@@ -297,7 +413,11 @@
         "dayFolder": "./year-2023/day-04",
         "solveFile": "./year-2023/day-04/solve.js",
         "inputFile": "./year-2023/day-04/input.txt",
-        "outputFile": "./year-2023/day-04/output.json"
+        "outputFile": "./year-2023/day-04/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-04.input.bin",
+        "encryptedOutputFile": "./input-files/2023-04.output.bin",
+        "combinedHash": "e7652e84a936bf3775503c990e5712401e2b2fb68f76d4601bc4367851c05627"
     },
     {
         "id": "2023-05",
@@ -307,7 +427,11 @@
         "dayFolder": "./year-2023/day-05",
         "solveFile": "./year-2023/day-05/solve.js",
         "inputFile": "./year-2023/day-05/input.txt",
-        "outputFile": "./year-2023/day-05/output.json"
+        "outputFile": "./year-2023/day-05/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-05.input.bin",
+        "encryptedOutputFile": "./input-files/2023-05.output.bin",
+        "combinedHash": "9bd45465cfba1c4f3dbde989277e8bd20cdca0eb5f09f78fb2b254b0ec4070d7"
     },
     {
         "id": "2023-06",
@@ -317,7 +441,11 @@
         "dayFolder": "./year-2023/day-06",
         "solveFile": "./year-2023/day-06/solve.js",
         "inputFile": "./year-2023/day-06/input.txt",
-        "outputFile": "./year-2023/day-06/output.json"
+        "outputFile": "./year-2023/day-06/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-06.input.bin",
+        "encryptedOutputFile": "./input-files/2023-06.output.bin",
+        "combinedHash": "f41411484700d2a4e3f1887a6e1e09bbed604e1082669b1691079432b364e8ca"
     },
     {
         "id": "2023-07",
@@ -327,7 +455,11 @@
         "dayFolder": "./year-2023/day-07",
         "solveFile": "./year-2023/day-07/solve.js",
         "inputFile": "./year-2023/day-07/input.txt",
-        "outputFile": "./year-2023/day-07/output.json"
+        "outputFile": "./year-2023/day-07/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-07.input.bin",
+        "encryptedOutputFile": "./input-files/2023-07.output.bin",
+        "combinedHash": "87b45a82423ada6622cfe2dcca7f49aa63df45d9feeff0bb23949356a4fdcac0"
     },
     {
         "id": "2023-08",
@@ -337,7 +469,11 @@
         "dayFolder": "./year-2023/day-08",
         "solveFile": "./year-2023/day-08/solve.js",
         "inputFile": "./year-2023/day-08/input.txt",
-        "outputFile": "./year-2023/day-08/output.json"
+        "outputFile": "./year-2023/day-08/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-08.input.bin",
+        "encryptedOutputFile": "./input-files/2023-08.output.bin",
+        "combinedHash": "6877a73e405b0408ae4414802ab2ad555f8b229541953856d4fd770518162141"
     },
     {
         "id": "2023-09",
@@ -347,7 +483,11 @@
         "dayFolder": "./year-2023/day-09",
         "solveFile": "./year-2023/day-09/solve.js",
         "inputFile": "./year-2023/day-09/input.txt",
-        "outputFile": "./year-2023/day-09/output.json"
+        "outputFile": "./year-2023/day-09/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-09.input.bin",
+        "encryptedOutputFile": "./input-files/2023-09.output.bin",
+        "combinedHash": "57fce7c1f271034bdef7d4af45a6d92d40a895e925fe704db3b625f879cc4586"
     },
     {
         "id": "2023-10",
@@ -357,7 +497,11 @@
         "dayFolder": "./year-2023/day-10",
         "solveFile": "./year-2023/day-10/solve.js",
         "inputFile": "./year-2023/day-10/input.txt",
-        "outputFile": "./year-2023/day-10/output.json"
+        "outputFile": "./year-2023/day-10/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-10.input.bin",
+        "encryptedOutputFile": "./input-files/2023-10.output.bin",
+        "combinedHash": "fa172d3304950bbb6e7e88afad092a82baa87756f38908d1ba0d36e641e99bb2"
     },
     {
         "id": "2023-11",
@@ -367,7 +511,11 @@
         "dayFolder": "./year-2023/day-11",
         "solveFile": "./year-2023/day-11/solve.js",
         "inputFile": "./year-2023/day-11/input.txt",
-        "outputFile": "./year-2023/day-11/output.json"
+        "outputFile": "./year-2023/day-11/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-11.input.bin",
+        "encryptedOutputFile": "./input-files/2023-11.output.bin",
+        "combinedHash": "35173c2b75e3662c1bc122d8acdd917397dd1b57495fbfb40ecaaa48e8c6d8bd"
     },
     {
         "id": "2023-12",
@@ -377,7 +525,11 @@
         "dayFolder": "./year-2023/day-12",
         "solveFile": "./year-2023/day-12/solve.js",
         "inputFile": "./year-2023/day-12/input.txt",
-        "outputFile": "./year-2023/day-12/output.json"
+        "outputFile": "./year-2023/day-12/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-12.input.bin",
+        "encryptedOutputFile": "./input-files/2023-12.output.bin",
+        "combinedHash": "a73be96366ef37e5bfb74b115acaf4d68d869813b9f670ceaa0369894e9eb715"
     },
     {
         "id": "2023-13",
@@ -387,7 +539,11 @@
         "dayFolder": "./year-2023/day-13",
         "solveFile": "./year-2023/day-13/solve.js",
         "inputFile": "./year-2023/day-13/input.txt",
-        "outputFile": "./year-2023/day-13/output.json"
+        "outputFile": "./year-2023/day-13/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-13.input.bin",
+        "encryptedOutputFile": "./input-files/2023-13.output.bin",
+        "combinedHash": "5a79a8e933ccc74124f7f81e1bd3470fc813710f41e07960caee1017453f6583"
     },
     {
         "id": "2023-14",
@@ -397,7 +553,11 @@
         "dayFolder": "./year-2023/day-14",
         "solveFile": "./year-2023/day-14/solve.js",
         "inputFile": "./year-2023/day-14/input.txt",
-        "outputFile": "./year-2023/day-14/output.json"
+        "outputFile": "./year-2023/day-14/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-14.input.bin",
+        "encryptedOutputFile": "./input-files/2023-14.output.bin",
+        "combinedHash": "1dea0ae48136505fe136ef59505c46b16c6f1444f548a12b80f4bf740169c603"
     },
     {
         "id": "2023-15",
@@ -407,7 +567,11 @@
         "dayFolder": "./year-2023/day-15",
         "solveFile": "./year-2023/day-15/solve.js",
         "inputFile": "./year-2023/day-15/input.txt",
-        "outputFile": "./year-2023/day-15/output.json"
+        "outputFile": "./year-2023/day-15/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-15.input.bin",
+        "encryptedOutputFile": "./input-files/2023-15.output.bin",
+        "combinedHash": "faf596c5a1bae1f0b1cd4fe2f9bbc90fd091eb7e6de4655d053bb386388f1891"
     },
     {
         "id": "2023-16",
@@ -417,7 +581,11 @@
         "dayFolder": "./year-2023/day-16",
         "solveFile": "./year-2023/day-16/solve.js",
         "inputFile": "./year-2023/day-16/input.txt",
-        "outputFile": "./year-2023/day-16/output.json"
+        "outputFile": "./year-2023/day-16/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2023-16.input.bin",
+        "encryptedOutputFile": "./input-files/2023-16.output.bin",
+        "combinedHash": "e87e1dfe621f4ff30c09046aafb384581d9c72048e7d321e5df755707abfd6a1"
     },
     {
         "id": "2024-01",
@@ -427,7 +595,11 @@
         "dayFolder": "./year-2024/day-01",
         "solveFile": "./year-2024/day-01/solve.js",
         "inputFile": "./year-2024/day-01/input.txt",
-        "outputFile": "./year-2024/day-01/output.json"
+        "outputFile": "./year-2024/day-01/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-01.input.bin",
+        "encryptedOutputFile": "./input-files/2024-01.output.bin",
+        "combinedHash": "573926cb9a451c33231da945dc9c56cb6f97ff2405a0e5d0f3027b14802fad18"
     },
     {
         "id": "2024-02",
@@ -437,7 +609,11 @@
         "dayFolder": "./year-2024/day-02",
         "solveFile": "./year-2024/day-02/solve.js",
         "inputFile": "./year-2024/day-02/input.txt",
-        "outputFile": "./year-2024/day-02/output.json"
+        "outputFile": "./year-2024/day-02/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-02.input.bin",
+        "encryptedOutputFile": "./input-files/2024-02.output.bin",
+        "combinedHash": "ddcbba44e6db94fd59a27d538137b422d0e0823afb48ca44608b0d5002deb5a9"
     },
     {
         "id": "2024-03",
@@ -447,7 +623,11 @@
         "dayFolder": "./year-2024/day-03",
         "solveFile": "./year-2024/day-03/solve.js",
         "inputFile": "./year-2024/day-03/input.txt",
-        "outputFile": "./year-2024/day-03/output.json"
+        "outputFile": "./year-2024/day-03/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-03.input.bin",
+        "encryptedOutputFile": "./input-files/2024-03.output.bin",
+        "combinedHash": "3d8f85ade6e5f32fa1e65d1acd5ccd254fe3b928d159cd005505454a27545765"
     },
     {
         "id": "2024-04",
@@ -457,7 +637,11 @@
         "dayFolder": "./year-2024/day-04",
         "solveFile": "./year-2024/day-04/solve.js",
         "inputFile": "./year-2024/day-04/input.txt",
-        "outputFile": "./year-2024/day-04/output.json"
+        "outputFile": "./year-2024/day-04/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-04.input.bin",
+        "encryptedOutputFile": "./input-files/2024-04.output.bin",
+        "combinedHash": "adfdc97b39ed1dab86f642763aeda321bb3ba6e55cd8fe3fbf1727e15e8d688a"
     },
     {
         "id": "2024-05",
@@ -467,7 +651,11 @@
         "dayFolder": "./year-2024/day-05",
         "solveFile": "./year-2024/day-05/solve.js",
         "inputFile": "./year-2024/day-05/input.txt",
-        "outputFile": "./year-2024/day-05/output.json"
+        "outputFile": "./year-2024/day-05/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-05.input.bin",
+        "encryptedOutputFile": "./input-files/2024-05.output.bin",
+        "combinedHash": "ccf2ad6df2dd43ac028321d12d48226b42ae0ef2a9026763ff970bd30187e5dd"
     },
     {
         "id": "2024-06",
@@ -477,7 +665,11 @@
         "dayFolder": "./year-2024/day-06",
         "solveFile": "./year-2024/day-06/solve.js",
         "inputFile": "./year-2024/day-06/input.txt",
-        "outputFile": "./year-2024/day-06/output.json"
+        "outputFile": "./year-2024/day-06/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-06.input.bin",
+        "encryptedOutputFile": "./input-files/2024-06.output.bin",
+        "combinedHash": "74652d0f44780a8286ea47e051b73d796642a9e56d48bdddd921f4863458bba9"
     },
     {
         "id": "2024-07",
@@ -487,7 +679,11 @@
         "dayFolder": "./year-2024/day-07",
         "solveFile": "./year-2024/day-07/solve.js",
         "inputFile": "./year-2024/day-07/input.txt",
-        "outputFile": "./year-2024/day-07/output.json"
+        "outputFile": "./year-2024/day-07/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-07.input.bin",
+        "encryptedOutputFile": "./input-files/2024-07.output.bin",
+        "combinedHash": "c4c99eb17c384cc4046a61f326e6f973921c6d1046be25843550aa65f69be1bd"
     },
     {
         "id": "2024-08",
@@ -497,7 +693,11 @@
         "dayFolder": "./year-2024/day-08",
         "solveFile": "./year-2024/day-08/solve.js",
         "inputFile": "./year-2024/day-08/input.txt",
-        "outputFile": "./year-2024/day-08/output.json"
+        "outputFile": "./year-2024/day-08/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-08.input.bin",
+        "encryptedOutputFile": "./input-files/2024-08.output.bin",
+        "combinedHash": "fe1e75ceaef6b8d1895815c68742332b9101528cd46b6b519cccd1e8db27bde6"
     },
     {
         "id": "2024-09",
@@ -507,7 +707,11 @@
         "dayFolder": "./year-2024/day-09",
         "solveFile": "./year-2024/day-09/solve.js",
         "inputFile": "./year-2024/day-09/input.txt",
-        "outputFile": "./year-2024/day-09/output.json"
+        "outputFile": "./year-2024/day-09/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-09.input.bin",
+        "encryptedOutputFile": "./input-files/2024-09.output.bin",
+        "combinedHash": "73f2e0a937911db90fcc27c14a6bc7bdea5f334e2ea0a632c73f49d58a0f88ae"
     },
     {
         "id": "2024-10",
@@ -517,7 +721,11 @@
         "dayFolder": "./year-2024/day-10",
         "solveFile": "./year-2024/day-10/solve.js",
         "inputFile": "./year-2024/day-10/input.txt",
-        "outputFile": "./year-2024/day-10/output.json"
+        "outputFile": "./year-2024/day-10/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-10.input.bin",
+        "encryptedOutputFile": "./input-files/2024-10.output.bin",
+        "combinedHash": "db4d204bb5610e70759f3e8f8d9f0bd0863ef0c86d9fe70737cd4be838348f1c"
     },
     {
         "id": "2024-11",
@@ -527,7 +735,11 @@
         "dayFolder": "./year-2024/day-11",
         "solveFile": "./year-2024/day-11/solve.js",
         "inputFile": "./year-2024/day-11/input.txt",
-        "outputFile": "./year-2024/day-11/output.json"
+        "outputFile": "./year-2024/day-11/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-11.input.bin",
+        "encryptedOutputFile": "./input-files/2024-11.output.bin",
+        "combinedHash": "9d51819067227230c8c24f48aa02a89366c092e8b85a1887459e9393841ffc6c"
     },
     {
         "id": "2024-12",
@@ -537,7 +749,11 @@
         "dayFolder": "./year-2024/day-12",
         "solveFile": "./year-2024/day-12/solve.js",
         "inputFile": "./year-2024/day-12/input.txt",
-        "outputFile": "./year-2024/day-12/output.json"
+        "outputFile": "./year-2024/day-12/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-12.input.bin",
+        "encryptedOutputFile": "./input-files/2024-12.output.bin",
+        "combinedHash": "bbef30362d5b9c1d8e858a2cf7930e319726b8bd422479c60a8221d5e971a5ed"
     },
     {
         "id": "2024-13",
@@ -547,6 +763,10 @@
         "dayFolder": "./year-2024/day-13",
         "solveFile": "./year-2024/day-13/solve.js",
         "inputFile": "./year-2024/day-13/input.txt",
-        "outputFile": "./year-2024/day-13/output.json"
+        "outputFile": "./year-2024/day-13/output.json",
+        "encryptedFolder": "./input-files",
+        "encryptedInputFile": "./input-files/2024-13.input.bin",
+        "encryptedOutputFile": "./input-files/2024-13.output.bin",
+        "combinedHash": "bb7cadaf5ae1aacc84f5b9672d7455d61e391fa180a5b93bda3081aed98ff6fb"
     }
 ]
