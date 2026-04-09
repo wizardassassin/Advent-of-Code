@@ -115,9 +115,10 @@ export function generateIOHash(inputText, outputText) {
 /**
  *
  * @param {import("./metadata.js").AOCData} data
+ * @param {boolean} logOnly
  * @returns
  */
-export function setIOFiles(data) {
+export function setIOFiles(data, logOnly = false) {
     if (!hasSecretKey()) {
         console.log("No secret key was found... skipping");
         return false;
@@ -125,6 +126,17 @@ export function setIOFiles(data) {
     const inputText = fs.readFileSync(data.inputFile, "utf-8");
     const outputText = fs.readFileSync(data.outputFile, "utf-8");
     const hash = generateIOHash(inputText, outputText);
+    if (logOnly) {
+        const sameHash = hash === data.combinedHash;
+        console.log("--- inputText ---");
+        console.log(encodeData(inputText).toString("utf-8").trim());
+        console.log("--- --------- ---");
+        console.log("--- outputText ---");
+        console.log(encodeData(outputText).toString("utf-8").trim());
+        console.log("--- ---------- ---");
+        console.log("sameHash: " + sameHash);
+        return false;
+    }
     if (hash !== data.combinedHash) {
         fs.writeFileSync(data.encryptedInputFile, encodeData(inputText));
         fs.writeFileSync(data.encryptedOutputFile, encodeData(outputText));
@@ -137,9 +149,10 @@ export function setIOFiles(data) {
 /**
  *
  * @param {import("./metadata.js").AOCData} data
+ * @param {boolean} logOnly
  * @returns
  */
-export function getIOFiles(data) {
+export function getIOFiles(data, logOnly = false) {
     if (!hasSecretKey()) {
         console.log("No secret key was found... skipping");
         return false;
@@ -155,28 +168,39 @@ export function getIOFiles(data) {
     const inputText = decodeData(encryptedInputText);
     const outputText = decodeData(encryptedOutputText);
     const hash = generateIOHash(inputText, outputText);
+    if (logOnly) {
+        const validHash = hash === data.combinedHash;
+        console.log("--- inputText ---");
+        console.log(inputText.toString("utf-8").trim());
+        console.log("--- --------- ---");
+        console.log("--- outputText ---");
+        console.log(outputText.toString("utf-8").trim());
+        console.log("--- ---------- ---");
+        console.log("validHash: " + validHash);
+        return false;
+    }
     assert.strictEqual(hash, data.combinedHash, "Invalid file hash");
     fs.writeFileSync(data.inputFile, inputText);
     fs.writeFileSync(data.outputFile, outputText);
     return true;
 }
 
-export function encryptCLI(year, day) {
+export function encryptCLI(year, day, dryRun) {
     const metadata = readMetadata();
     const data = metadata.find((x) => x.year === year && x.day === day);
     assert.ok(data, "Couldn't find file metadata");
-    const didUpdate = setIOFiles(data);
+    const didUpdate = setIOFiles(data, dryRun);
     if (didUpdate) {
         console.log("Updated input files");
         writeMetadata(metadata);
     } else console.log("No files were updated");
 }
 
-export function decryptCLI(year, day) {
+export function decryptCLI(year, day, dryRun) {
     const metadata = readMetadata();
     const data = metadata.find((x) => x.year === year && x.day === day);
     assert.ok(data, "Couldn't find file metadata");
-    const didUpdate = getIOFiles(data);
+    const didUpdate = getIOFiles(data, dryRun);
     if (didUpdate) console.log("Updated input files");
     else console.log("No files were updated");
 }

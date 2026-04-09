@@ -109,10 +109,14 @@ yargs(hideBin(process.argv))
                 })
                 .positional("day", {
                     type: "number",
+                })
+                .option("dry-run", {
+                    description: "Print encrpted result",
+                    type: "boolean",
                 }),
         (argv) => {
             validateDate(argv.year, argv.day);
-            encryptCLI(argv.year, argv.day);
+            encryptCLI(argv.year, argv.day, argv.dryRun ?? false);
         },
     )
     .command(
@@ -125,10 +129,14 @@ yargs(hideBin(process.argv))
                 })
                 .positional("day", {
                     type: "number",
+                })
+                .option("dry-run", {
+                    description: "Print decrypted result",
+                    type: "boolean",
                 }),
         (argv) => {
             validateDate(argv.year, argv.day);
-            decryptCLI(argv.year, argv.day);
+            decryptCLI(argv.year, argv.day, argv.dryRun ?? false);
         },
     )
     .strictCommands()
